@@ -15,3 +15,5 @@ github_username: affear
 
 # Build settings
 markdown: kramdown
+
+exclude: [README.md, Gemfile, Gemfile.lock]
