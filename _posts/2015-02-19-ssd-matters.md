@@ -1,7 +1,6 @@
 ---
 layout: post
-title: "Deploy aDock on Laptops"
-subtitle:  "SSD matters"
+title: "Deploy aDock on Laptops - SSD Matters"
 date:   2015-02-19 10.42
 ---
 
@@ -11,7 +10,7 @@ To do this, we will try to deploy an _aDock_ environment on two different laptop
 We will leave _Google Chrome_ (our favorite web browser) and _Sublime Text_ (our favorite text editor) open to keep things more realistic. In fact, we assume that a researcher/developer won't use a clean server edition of his OS while developing.
 
 Our goal is to deploy a 1+5 configuration (one controller node and five compute nodes), which we think it's suitable configuration for testing purposes.  
-Our experiment went through 6 states:
+Our experiment went through 7 states:
 
 1. Clean (_Google Chrome_ plus _Sublime Text_);
 2. Ctrl (controller node is up);
@@ -173,6 +172,6 @@ SWAP memory is in MB, because it is dynamically allocated and we don't know its 
 
 In the first case, we can see that there is little dependence among CPU usage, startup time and number of containers. RAM usage and SWAP are strictly correlated, instead. We understand that running a containers is mostly a memory intensive task. 
 In the second case, we see CPU usage grow significantly and RAM and SWAP stay unchanged. Our opinion is that Mac OS is too opaque to understand if something was happening underneath.  
-Reading data we have to keep in mind that _Docker_ stores images on disk. So, it is not surprising to see that _MacBook_ is almost 4 times faster than __Samsung__. SSD heavily beats HD, even when we come to use the SWAP.
+Reading data we have to keep in mind that _Docker_ stores images on disk. So, it is not surprising to see that _MacBook_ is almost 4 times faster than _Samsung_. SSD heavily beats HD, even when we come to use the SWAP.
 
 In both cases we achieved a 1+5 configuration with still usable laptops and reasonable containers startup times.
