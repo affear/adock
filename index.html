@@ -21,8 +21,9 @@ layout: default
     {% for post in site.posts %}
       <li>
         <h2>
-          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> {{ post.date | date: "%b %-d, %Y" }}
+          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
+         {% if page.subtitle %} • {{ page.subtitle }}{% endif %} {{ post.date | date: "%b %-d, %Y" }}
       </li>
     {% endfor %}
   </ul>

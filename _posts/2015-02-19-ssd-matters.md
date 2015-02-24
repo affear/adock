@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "SSD matters"
+title: "Deploy aDock on Laptops"
+subtitle:  "SSD matters"
 date:   2015-02-19 10.42
 ---
 
@@ -172,6 +173,6 @@ SWAP memory is in MB, because it is dynamically allocated and we don't know its 
 
 In the first case, we can see that there is little dependence among CPU usage, startup time and number of containers. RAM usage and SWAP are strictly correlated, instead. We understand that running a containers is mostly a memory intensive task. 
 In the second case, we see CPU usage grow significantly and RAM and SWAP stay unchanged. Our opinion is that Mac OS is too opaque to understand if something was happening underneath.  
-Reading data we have to keep in mind that _Docker_ stores images on disk. So, it is not surprising to see that _MacBook_ is almost 4 times faster than __Samsung__. SSD hardly beats HD, even when we come to use the SWAP.
+Reading data we have to keep in mind that _Docker_ stores images on disk. So, it is not surprising to see that _MacBook_ is almost 4 times faster than __Samsung__. SSD heavily beats HD, even when we come to use the SWAP.
 
 In both cases we achieved a 1+5 configuration with still usable laptops and reasonable containers startup times.
