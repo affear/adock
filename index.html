@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<div class="row">
+  <div class="col-md-3 hidden-xs"></div>
+  <div class="col-md-4 col-xs-12">
+    <iframe 
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/DQMy2HnX9nc"
+      frameborder="0"
+      allowfullscreen></iframe>
+    </div>
+  <div class="col-md-3 hidden-xs"></div>
+</div>
+
+<div class="row">
+  <h2>What's new</h2>
+  <ul>
+    {% for post in site.posts %}
+      <li>
+        <h2>
+          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> {{ post.date | date: "%b %-d, %Y" }}
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>

@@ -1,0 +1,17 @@
+# Site settings
+title: aDock
+email: affear.team@gmail.com
+description: > # "
+  aDock is meant to help researchers and developers
+  to test out their algorithms for cloud platforms.
+  It is a modular and dockerized environment,
+  which deploys OpenStack using DevStack.
+  Among its components, aDock provides Polyphemus
+  (the web interface) and Oscard (a tool to run
+  simulations against the OpenStack environment)."
+baseurl: "/adock" # the subpath of your site, e.g. /blog/
+url: "https://affear.github.io" # the base hostname & protocol for your site
+github_username: affear
+
+# Build settings
+markdown: kramdown
