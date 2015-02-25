@@ -1,16 +1,23 @@
 ---
 layout: default
 ---
-
-<div class="row">
-  <h2>What's new</h2>
-  <ul>
-    {% for post in site.posts %}
-      <li>
-        <h2>
-          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2> {{ post.date | date: "%b %-d, %Y" }}
-      </li>
-    {% endfor %}
-  </ul>
+<div id="home">
+  {% include landing.html %}
 </div>
+
+<div class="small-container">
+
+  <div id="new" class="section">
+   {% include new.html %}
+  </div>
+
+  <div id="components" class="section">
+   {% include components.html %}
+  </div>
+
+  <div id="todo" class="section">
+   {% include todo.html %}
+  </div>
+
+</div>
+

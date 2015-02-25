@@ -1,3 +1,112 @@
-.ninja {
-	visibility: hidden;
+$max-width: 970px;
+$os-red: red;
+$default-margin: 30px;
+$lightweight: 300;
+
+body,html {
+	padding: 0;
+	overflow-x: hidden;
+	font-family: lato;
 }
+
+.navbar-fixed-top {
+	max-width: $max-width;
+	margin: $default-margin auto
+}
+
+.navbar {
+	text-transform: uppercase;
+	background-color: #000;
+	background-image: none;
+	border:none;
+}	
+
+h2 {
+	:hover {
+		color: pink;
+		text-decoration: none;
+	}
+	a {
+		color: $os-red;
+	}
+}
+
+#navbar li a {
+	color: #FFF;
+	font-size: 30px;
+	font-weight: $lightweight;
+}
+
+#navbar .active a {
+	background-color: #FFF;
+	color: #000;
+}
+
+#navbar li :hover {
+	background-color: #FFF;
+	color: #000;
+}
+
+.small-container{
+	width: 70%;
+	margin: auto;
+}
+
+	
+.section, .post {
+	width: $max-width;
+	margin: 0 auto;
+	font-size: 18px;
+}
+
+.cover {
+	height: 33vh;
+	width: 100%;
+	margin: 20px 0;
+	padding: 0 20px;
+}
+
+.landing-cover {
+	background-color: yellow;
+}
+
+.new-cover {
+	background-color: blue;
+}
+
+.components-cover {
+	background-color: pink;
+}
+
+.todo-cover {
+	background-color: red;
+}
+
+#home {
+	font-size: $default-margin;
+	font-weight: $lightweight;
+	text-align: center;
+}
+#home .cover {
+	margin: 0;
+	margin-bottom: $default-margin;
+	padding: 0;
+}
+
+#back {
+	position: fixed;
+	margin-top: $default-margin;
+	margin-left: $default-margin;
+}
+
+
+/*
+	.something-cover {
+		background: url(img/2.jpg) no-repeat 50% 0 fixed;
+		height: 600px;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+*/
