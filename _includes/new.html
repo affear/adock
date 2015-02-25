@@ -1,11 +1,11 @@
-<div class="cover new-cover"></div>
-<h2>What's new</h2>
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <h2>
-        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </h2>
-    </li>
-  {% endfor %}
-</ul>
+<div id="new-cover" class="section-cover"></div>
+<div class="section-text">
+	<h2>What's new</h2>
+	<ul>
+	  {% for post in site.posts %}
+	    <li class="a-parent">
+	      <a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+	    </li>
+	  {% endfor %}
+	</ul>
+</div>
