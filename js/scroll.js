@@ -1,5 +1,5 @@
 var animatedScroll = function(){
-  $(".navbar-collapse ul li a[href^='#']").on('click',
+  $(".nav-a-parent a").on('click',
     function(e){
       target = this.hash;
       // prevent default anchor click behavior
