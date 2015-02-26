@@ -1,5 +1,5 @@
 var animatedScroll = function(){
-  $(".nav-a-parent a").on('click',
+  $(".nav-a-parent a, .nav-brand-parent a").on('click',
     function(e){
       target = this.hash;
       // prevent default anchor click behavior
