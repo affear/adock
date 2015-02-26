@@ -34,68 +34,70 @@ _SWAP: 4GB_
 _SSD: no_  
 _OS: Linux Mint 3.13.0-24-generic XFCE_  
 
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th class="text-center">State</th>
-      <th class="text-center">Time (s)</th>
-      <th class="text-center">CPU (%)</th>
-      <th class="text-center">RAM (%)</th>
-      <th class="text-center">SWAP (%)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>clean</td>
-      <td class="text-center">1736</td>
-      <td class="text-center">12.34</td>
-      <td class="text-center">52.052</td>
-      <td class="text-center">7.779</td>
-    </tr>
-    <tr>
-      <td>ctrl</td>
-      <td class="text-center">898</td>
-      <td class="text-center">12.495</td>
-      <td class="text-center">95.954</td>
-      <td class="text-center">9.809</td>
-    </tr>
-    <tr>
-      <td>1plus1</td>
-      <td class="text-center">923</td>
-      <td class="text-center">12.77</td>
-      <td class="text-center">96.909</td>
-      <td class="text-center">19.235</td>
-    </tr>
-    <tr>
-      <td>1plus2</td>
-      <td class="text-center">934</td>
-      <td class="text-center">13.14</td>
-      <td class="text-center">96.528</td>
-      <td class="text-center">29.861</td>
-    </tr>
-    <tr>
-      <td>1plus3</td>
-      <td class="text-center">976</td>
-      <td class="text-center">13.52</td>
-      <td class="text-center">96.048</td>
-      <td class="text-center">38.053</td>
+<div class="table-wrapper">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th class="text-center">State</th>
+        <th class="text-center">Time (s)</th>
+        <th class="text-center">CPU (%)</th>
+        <th class="text-center">RAM (%)</th>
+        <th class="text-center">SWAP (%)</th>
       </tr>
-    <tr>
-      <td>1plus4</td>
-      <td class="text-center">1104</td>
-      <td class="text-center">13.79</td>
-      <td class="text-center">96.453</td>
-      <td class="text-center">43.665</td>
-    </tr>
-    <tr>
-      <td>1plus5</td>
-      <td class="text-center">---</td>
-      <td class="text-center">14.02</td>
-      <td class="text-center">96.325</td>
-      <td class="text-center">51.496</td>
-    </tr>
-  </tbody>
-</table>
+    </thead>
+    <tbody>
+      <tr>
+        <td>clean</td>
+        <td class="text-center">1736</td>
+        <td class="text-center">12.34</td>
+        <td class="text-center">52.052</td>
+        <td class="text-center">7.779</td>
+      </tr>
+      <tr>
+        <td>ctrl</td>
+        <td class="text-center">898</td>
+        <td class="text-center">12.495</td>
+        <td class="text-center">95.954</td>
+        <td class="text-center">9.809</td>
+      </tr>
+      <tr>
+        <td>1plus1</td>
+        <td class="text-center">923</td>
+        <td class="text-center">12.77</td>
+        <td class="text-center">96.909</td>
+        <td class="text-center">19.235</td>
+      </tr>
+      <tr>
+        <td>1plus2</td>
+        <td class="text-center">934</td>
+        <td class="text-center">13.14</td>
+        <td class="text-center">96.528</td>
+        <td class="text-center">29.861</td>
+      </tr>
+      <tr>
+        <td>1plus3</td>
+        <td class="text-center">976</td>
+        <td class="text-center">13.52</td>
+        <td class="text-center">96.048</td>
+        <td class="text-center">38.053</td>
+        </tr>
+      <tr>
+        <td>1plus4</td>
+        <td class="text-center">1104</td>
+        <td class="text-center">13.79</td>
+        <td class="text-center">96.453</td>
+        <td class="text-center">43.665</td>
+      </tr>
+      <tr>
+        <td>1plus5</td>
+        <td class="text-center">---</td>
+        <td class="text-center">14.02</td>
+        <td class="text-center">96.325</td>
+        <td class="text-center">51.496</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 
 ## __Apple MacBook Pro (Early 2011)__  
@@ -107,68 +109,70 @@ _OS: Mac Os X Yosemite_
 
 SWAP memory is in MB, because it is dynamically allocated and we don't know its total.
 
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th class="text-center">State</th>
-      <th class="text-center">Time (s)</th>
-      <th class="text-center">CPU (%)</th>
-      <th class="text-center">RAM (%)</th>
-      <th class="text-center">SWAP (MB)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>clean</td>
-      <td class="text-center">466</td>
-      <td class="text-center">3.05</td>
-      <td class="text-center">93.63</td>
-      <td class="text-center">55.5</td>
-    </tr>
-    <tr>
-      <td>ctrl</td>
-      <td class="text-center">242</td>
-      <td class="text-center">9.76</td>
-      <td class="text-center">99.38</td>
-      <td class="text-center">93.8</td>
-    </tr>
-    <tr>
-      <td>1plus1</td>
-      <td class="text-center">255</td>
-      <td class="text-center">12.78</td>
-      <td class="text-center">99.75</td>
-      <td class="text-center">93.8</td>
-    </tr>
-    <tr>
-      <td>1plus2</td>
-      <td class="text-center">255</td>
-      <td class="text-center">14.94</td>
-      <td class="text-center">99.75</td>
-      <td class="text-center">93.8</td>
-    </tr>
-    <tr>
-      <td>1plus3</td>
-      <td class="text-center">257</td>
-      <td class="text-center">15.91</td>
-      <td class="text-center">99.75</td>
-      <td class="text-center">93.8</td>
+<div class="table-wrapper">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th class="text-center">State</th>
+        <th class="text-center">Time (s)</th>
+        <th class="text-center">CPU (%)</th>
+        <th class="text-center">RAM (%)</th>
+        <th class="text-center">SWAP (MB)</th>
       </tr>
-    <tr>
-      <td>1plus4</td>
-      <td class="text-center">288</td>
-      <td class="text-center">16.79</td>
-      <td class="text-center">99.75</td>
-      <td class="text-center">93.8</td>
-    </tr>
-    <tr>
-      <td>1plus5</td>
-      <td class="text-center">304</td>
-      <td class="text-center">18.01</td>
-      <td class="text-center">99.75</td>
-      <td class="text-center">93.8</td>
-    </tr>
-  </tbody>
-</table>
+    </thead>
+    <tbody>
+      <tr>
+        <td>clean</td>
+        <td class="text-center">466</td>
+        <td class="text-center">3.05</td>
+        <td class="text-center">93.63</td>
+        <td class="text-center">55.5</td>
+      </tr>
+      <tr>
+        <td>ctrl</td>
+        <td class="text-center">242</td>
+        <td class="text-center">9.76</td>
+        <td class="text-center">99.38</td>
+        <td class="text-center">93.8</td>
+      </tr>
+      <tr>
+        <td>1plus1</td>
+        <td class="text-center">255</td>
+        <td class="text-center">12.78</td>
+        <td class="text-center">99.75</td>
+        <td class="text-center">93.8</td>
+      </tr>
+      <tr>
+        <td>1plus2</td>
+        <td class="text-center">255</td>
+        <td class="text-center">14.94</td>
+        <td class="text-center">99.75</td>
+        <td class="text-center">93.8</td>
+      </tr>
+      <tr>
+        <td>1plus3</td>
+        <td class="text-center">257</td>
+        <td class="text-center">15.91</td>
+        <td class="text-center">99.75</td>
+        <td class="text-center">93.8</td>
+        </tr>
+      <tr>
+        <td>1plus4</td>
+        <td class="text-center">288</td>
+        <td class="text-center">16.79</td>
+        <td class="text-center">99.75</td>
+        <td class="text-center">93.8</td>
+      </tr>
+      <tr>
+        <td>1plus5</td>
+        <td class="text-center">304</td>
+        <td class="text-center">18.01</td>
+        <td class="text-center">99.75</td>
+        <td class="text-center">93.8</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 In the first case, we can see that there is little dependence among CPU usage, startup time and number of containers. RAM usage and SWAP are strictly correlated, instead. We understand that running a containers is mostly a memory intensive task. 
 In the second case, we see CPU usage grow significantly and RAM and SWAP stay unchanged. Our opinion is that Mac OS is too opaque to understand if something was happening underneath.  
