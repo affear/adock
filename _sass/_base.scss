@@ -6,9 +6,13 @@ $lightweight: 300;
 body, html {
 	padding: 0;
 	font-family: lato;
+	font-weight: $lightweight;
+	letter-spacing: 1px;
+	font-size: 24px;
+	line-height: 150%;
 }
 
-li {
+ul li {
 	list-style-type: none;
 }
 
@@ -22,6 +26,10 @@ li {
 	background-color: #000;
 	background-image: none;
 	border:none;
+}
+
+a {
+	color: $os-red;
 }	
 
 .a-parent {
@@ -29,15 +37,11 @@ li {
 		color: pink;
 		text-decoration: none;
 	}
-	a {
-		color: $os-red;
-	}
 }
 
 #navbar .nav-a-parent a {
 	color: #FFF;
 	font-size: 30px;
-	font-weight: $lightweight;
 }
 
 #navbar .nav-a-parent.active a {
@@ -59,17 +63,30 @@ li {
 .section, .post {
 	max-width: $max-width;
 	margin: 0 auto;
-	font-size: 18px;
 }
 
 .section-cover {
-	height: 33vh;
+	height: 50vh;
 	width: 100%;
 	margin: 20px 0;
 }
 
 .section-text {
 	padding: 0 2%;
+}
+
+.section-title {
+	color: #000;
+	background-color: #FFF;
+	opacity: 0.8;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	margin-top: 120px;
+	padding: 10px;
+	h1 {
+		margin: 0;
+		font-size: 45px;
+	}
 }
 
 #landing-cover {
@@ -89,7 +106,16 @@ li {
 }
 
 .post-title {
-	font-size: 24px;
+	margin-top: $default-margin;
+}
+
+.component-card {
+	text-align: center;
+	height: 50vh;
+	font-size: 40px;
+	div {
+		margin-top: 100px;
+	}
 }
 
 #home {
@@ -107,6 +133,13 @@ li {
 	position: fixed;
 	margin-top: $default-margin;
 	margin-left: $default-margin;
+}
+
+.footer {
+	margin-top: $default-margin;
+	padding: $default-margin;
+	background-color: #D3D3D3;
+	text-align: right;
 }
 
 

@@ -37,3 +37,15 @@ Here is the screencast:
   <div class="col-md-3 hidden-xs"></div>
 </div>
 -->
+
+<!--
+FROM BOOTSTRAP:
+
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="..."></iframe>
+</div>
+
+<div class="embed-responsive embed-responsive-4by3">
+  <iframe class="embed-responsive-item" src="..."></iframe>
+</div>
+-->
