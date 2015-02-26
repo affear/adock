@@ -23,29 +23,6 @@ The aDock deploy is divided in 6 phases:
 
 Here is the screencast:
 
-<!--
-<div class="row">
-  <div class="col-md-3 hidden-xs"></div>
-  <div class="col-md-4 col-xs-12">
-    <iframe 
-      width="560"
-      height="315"
-      src="..................OUR_URL_ON_YOUTUBE..........."
-      frameborder="0"
-      allowfullscreen></iframe>
-    </div>
-  <div class="col-md-3 hidden-xs"></div>
-</div>
--->
-
-<!--
-FROM BOOTSTRAP:
-
 <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="..."></iframe>
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_22WaEyaIkw"></iframe>
 </div>
-
-<div class="embed-responsive embed-responsive-4by3">
-  <iframe class="embed-responsive-item" src="..."></iframe>
-</div>
--->
