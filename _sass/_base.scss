@@ -1,14 +1,20 @@
 $max-width: 970px;
-$os-red: #D94634;
+$os-red: #D42E2E;
+$os-light-red: #EC5553;
 $default-margin: 30px;
 $lightweight: 300;
+
+$font-size-normal: 24px;
+$font-size-medium: 30px;
+$font-size-big: 45px;
+$font-scale: 10px;
 
 body, html {
 	padding: 0;
 	font-family: lato;
 	font-weight: $lightweight;
 	letter-spacing: 1px;
-	font-size: 24px;
+	font-size: $font-size-normal;
 	line-height: 150%;
 }
 
@@ -34,14 +40,19 @@ a {
 
 .a-parent {
 	:hover {
-		color: pink;
+		color: $os-light-red;
 		text-decoration: none;
 	}
 }
 
 #navbar .nav-a-parent a {
 	color: #FFF;
-	font-size: 30px;
+	font-size: $font-size-normal;
+}
+
+.nav-brand-parent .navbar-brand {
+	color: #FFF;
+	font-size: $font-size-normal;
 }
 
 #navbar .nav-a-parent.active a {
@@ -52,6 +63,18 @@ a {
 #navbar .nav-a-parent :hover{
 	background-color: #FFF;
 	color: #000;
+}
+
+#navbar .nav-brand-parent {
+	.navbar-brand {
+		background-color: $os-red;
+	}
+	:hover {
+		background-color: $os-light-red;
+	}
+	:active {
+		background-color: $os-light-red;
+	}
 }
 
 .small-container{
@@ -73,6 +96,7 @@ a {
 
 .section-text {
 	padding: 0 2%;
+	min-height: 50vh;
 }
 
 .section-title {
@@ -85,12 +109,13 @@ a {
 	padding: 10px;
 	h1 {
 		margin: 0;
-		font-size: 45px;
+		font-size: $font-size-big;
 	}
 }
 
 #landing-cover {
-	background-color: yellow;
+	background-color: $os-red;
+	height: 26vh;
 }
 
 #new-cover {
@@ -98,31 +123,36 @@ a {
 }
 
 #components-cover {
-	background-color: pink;
+	background-color: yellow;
 }
 
 #todo-cover {
-	background-color: $os-red;
+	background-color: $os-light-red;
 }
 
-.post-title {
-	margin-top: $default-margin;
+.post-title, .post-title h1 {
+	font-size: $font-size-big;
+	margin: $default-margin;
 }
 
 .component-card {
 	text-align: center;
 	height: 50vh;
-	font-size: 40px;
+	font-size: $font-size-big;
 	div {
 		margin-top: 100px;
 	}
 }
 
 #home {
-	font-size: $default-margin;
+	font-size: $font-size-big;
 	font-weight: $lightweight;
 	text-align: center;
+	line-height: 200%;
+	letter-spacing: 2px;
+	font-style: italic;
 }
+
 #home .section-cover {
 	margin: 0;
 	margin-bottom: $default-margin;
@@ -142,6 +172,10 @@ a {
 	text-align: right;
 }
 
+.table-wrapper {
+	overflow: auto;
+}
+
 
 /*
 	.something-cover {
@@ -155,6 +189,30 @@ a {
 */
 
 @media (max-width: $max-width) {
+
+	html, body {
+		font-size: $font-size-normal - $font-scale;
+	}
+
+	#home {
+		font-size: $font-size-medium - $font-scale;
+	}
+
+	#navbar {
+		font-size: $font-size-medium - $font-scale;
+	}
+
+	.section-title h1 {
+		font-size: $font-size-big - $font-scale;
+	}
+
+	.component-card {
+		font-size: $font-size-big - $font-scale;
+	}
+
+	.post-title, .post-title h1 {
+		font-size: $font-size-medium - $font-scale;
+	}
 
 	#navbar {
 		width:100%;
@@ -176,5 +234,9 @@ a {
 
 	.section-title {
 		word-wrap: break-word;
+	}
+
+	.table {
+		overflow: scroll;
 	}
 }
