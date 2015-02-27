@@ -1,6 +1,5 @@
 $max-width: 970px;
-$os-red: #D42E2E;
-$os-light-red: #EC5553;
+$laptop: 970px;
 $default-margin: 30px;
 $lightweight: 300;
 
@@ -8,6 +7,14 @@ $font-size-normal: 24px;
 $font-size-medium: 30px;
 $font-size-big: 45px;
 $font-scale: 10px;
+
+$blue: #2196F3;
+$yellow: #FFFF00;
+$pink: #FF4081;
+$notblack: #424242;
+$light-gray: #D3D3D3;
+$os-red: #D42E2E;
+$os-light-red: #EC5553;
 
 body, html {
 	padding: 0;
@@ -119,15 +126,15 @@ a {
 }
 
 #new-cover {
-	background-color: blue;
+	background-color: $blue;
 }
 
 #components-cover {
-	background-color: yellow;
+	background-color: $yellow;
 }
 
 #todo-cover {
-	background-color: $os-light-red;
+	background-color: $pink;
 }
 
 .post-title, .post-title h1 {
@@ -168,7 +175,7 @@ a {
 .footer {
 	margin-top: $default-margin;
 	padding: $default-margin;
-	background-color: #D3D3D3;
+	background-color: $light-gray;
 	text-align: right;
 }
 
@@ -188,7 +195,7 @@ a {
 	}
 */
 
-@media (max-width: $max-width) {
+@media (max-width: $laptop) {
 
 	html, body {
 		font-size: $font-size-normal - $font-scale;
