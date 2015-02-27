@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "aDock Step by Step"
+title: "aDock Step by Step (video tutorial)"
 date:   2015-02-19 17.54
 ---
 
