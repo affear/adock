@@ -170,6 +170,11 @@ a {
 	position: fixed;
 	margin-top: $default-margin;
 	margin-left: $default-margin;
+	z-index: 1;
+	background-color: $os-red;
+	span {
+		color: #FFF;
+	}
 }
 
 .footer {
