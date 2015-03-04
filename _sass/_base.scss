@@ -92,7 +92,6 @@ a {
 	
 .section, .post {
 	max-width: $max-width;
-	margin: 0 auto;
 }
 
 .section-cover {
@@ -103,8 +102,10 @@ a {
 
 .section-text {
 	width: 100%;
-	padding: 0 2%;
 	min-height: 50vh;
+	ul {
+		padding-left: 0;
+	}
 }
 
 .section-title {
